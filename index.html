@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div id="welcome-lightbox" class="lightbox hidden">
+        <div class="lightbox-content">
+            <h1 class="text-3xl font-bold">Welcome</h1>
+            <button id="close-lightbox" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Close</button>
+        </div>
+    </div>
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a class="text-2xl font-bold" href="#">Abubakr Mohammed</a>
+            <ul class="flex space-x-4">
+                <li><a class="hover:text-gray-400" href="#about">About</a></li>
+                <li><a class="hover:text-gray-400" href="#projects">Projects</a></li>
+                <li><a class="hover:text-gray-400" href="#skills">Skills</a></li>
+                <li><a class="hover:text-gray-400" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="bg-green-500 text-white text-center py-20">
+        <div class="container mx-auto">
+          <h1 class="text-5xl font-bold" style="color: #00000d;">Hi, I'm Abubakr, </h1>
+          <p class="text-xl mt-4" style="color: #00000d;">a 3rd Year Computer Engineering Student.</p>
+        </div>
+    </section>
+    <section id="about" class="container mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p>I'm a passionate computer engineering student with a love for technology and innovation. I enjoy learning new things and applying my knowledge to solve real-world problems. 
+            As a current Computer Systems Engineering student at Carleton University, I am deeply committed to applying my skills and knowledge to create innovative software solutions. Through hands-on projects and coursework, I have built a strong foundation in software development, excelling in programming languages such as Python, C, Java, and JavaScript.
+        </p>
+    </section>
+    <section id="projects" class="container mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <div class="projects-container flex flex-wrap gap-6">
+            <div class="project-card mb-6 flex flex-col">
+                <h3 class="text-2xl font-semibold">OrgTool</h3>
+                <p class="mb-2">A task management platform designed for students to manage their schedules, set reminders and write class notes.</p>
+                <a href="https://github.com/Abubakr-Mohammed/OrgTool" class="text-blue-500 hover:underline" target="_blank">View on GitHub</a>
+            </div>
+        
+            <div class="project-card mb-6 flex flex-col">
+                <h3 class="text-2xl font-semibold">Nutritional Calorie Tracker</h3>
+                <p class="mb-2">A calorie accountant which accounts for every nutrient consumed through the day and informs user of how much nutrients they consumed.</p>
+                <a href="https://66c6333e7129b65417c427b5--incomparable-naiad-fc380c.netlify.app/" class="text-blue-500 hover:underline" target="_blank">View the Website</a>
+            </div>
+        
+            <div class="project-card mb-6 flex flex-col">
+                <h3 class="text-2xl font-semibold">Currency Conversion</h3>
+                <p class="mb-2">A useful tool to calculate effective currency value using the top economies in the world to convert currency seamlessly equipped with a handy UI.</p>
+                <a href="https://github.com/Abubakr-Mohammed/Financial-Conversion-System" class="text-blue-500 hover:underline" target="_blank">View on Github</a>
+            </div>
+        
+            <div class="project-card mb-6 flex flex-col">
+                <h3 class="text-2xl font-semibold">Fantasy Game</h3>
+                <p class="mb-2">A python game project which utilizes programming fundamentals to build a basic game development software using a .csv file to sort, load and display game features.</p>
+                <a href="https://github.com/Abubakr-Mohammed/Fantasy-Game-Project" class="text-blue-500 hover:underline" target="_blank">View on Github</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="container mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <ul class="list-disc list-inside">
+            <li>Programming Languages: C, Python, Java, MATLAB</li>
+            <li>Web Development: HTML, CSS, JavaScript, React</li>
+            <li>Tools and Frameworks: Flask, AWS, Jira and Confluence</li>
+        </ul>
+    </section>
+    <section id="contact" class="container mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-4">Contact</h2>
+        <p>Email: abubakrmohammed@cmail.carleton.ca</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/abubakrmohammed/" class="text-blue-500 hover:underline">AbubakrMohammed</a></p>
+    </section>
+    <script src = "script.js"></script>
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Abubakr Mohammed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
